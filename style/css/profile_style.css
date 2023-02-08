@@ -1,0 +1,23 @@
+@import url("./component.css");
+
+.fullName {
+  display: flex;
+  justify-content: space-between;
+}
+.frm_container {
+  width: calc(330px - 50px);
+  padding: 30px 20px;
+}
+
+form input:not([type="submit"]) {
+  width: 100%;
+  height: calc(65px - 20px);
+}
+form input[type="submit"] {
+  height: calc(65px - 20px);
+  margin-left: 15px;
+}
+#fname,
+#lname {
+  width: 112px;
+}

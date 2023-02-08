@@ -1,0 +1,51 @@
+@import url("./component.css");
+
+.frm-cont {
+  background-color: var(--white);
+  width: calc(340px - 50px);
+  padding: 40px 32px;
+  margin: 20px auto 95px;
+  border-radius: var(--small-raduis);
+}
+label {
+  color: var(--black);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input:not([type="submit"]) {
+  width: calc(300px - 40px);
+}
+form input[type="submit"] {
+  height: calc(70px - 20px);
+  margin: 30px 0px 0px;
+  background-color: var(--off_blue);
+}
+
+@media (min-width: 768px) {
+  .frm-cont {
+    background-color: var(--white);
+    width: calc(750px - 50px);
+    padding: 40px 32px;
+    margin: 90px auto 35px;
+    border-radius: var(--small-raduis);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  form input[type="submit"] {
+    align-self: center;
+  }
+  form select {
+    width: calc(675px - 40px);
+  }
+  form input:not([type="submit"]) {
+    width: calc(675px - 40px);
+  }
+}

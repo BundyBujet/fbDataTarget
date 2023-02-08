@@ -1,0 +1,85 @@
+@import url("./component.css");
+
+.dash-cont {
+  /* dsk-top margin */
+  /* margin-top: 90px;  */
+  margin-top: 25px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.dash-cont .point-cont {
+  background-color: var(--blue);
+  color: var(--off_white);
+  width: calc(310px - 24px);
+  height: calc(165px - 24px);
+  padding: 12px;
+  border-radius: var(--small-raduis);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.dash-cont .point-cont .point-head {
+  display: flex;
+  justify-content: space-between;
+}
+.dash-cont .point-cont .point-body {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dash-cont .dash-action {
+  /* background-color: brown; */
+  /* width: calc(700px - 50px); */
+  width: calc(310px - 50px);
+  height: calc(270px - 50px);
+  /* height: calc(222px - 50px); */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+.dash-action .extract {
+  margin-bottom: 60px;
+}
+.dash-action .upload-file {
+  background-color: var(--gray);
+  border-radius: var(--small-raduis);
+}
+.dash-action ul {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+}
+.dash-action li {
+  width: 90px;
+  padding: 5px 0px;
+  border-radius: var(--small-raduis);
+  text-align: center;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.dash-action .id {
+  background-color: var(--white);
+  width: 90px;
+  padding: 5px 0px;
+  border-radius: var(--small-raduis);
+  text-align: center;
+  color: var(--blue);
+}
+.dash-action input[type="file"] {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .dash-cont {
+    /* dsk-top margin */
+    margin-top: 90px;
+  }
+  .dash-cont .point-cont {
+    width: calc(700px - 50px);
+    height: calc(222px - 50px);
+    padding: 25px;
+  }
+}

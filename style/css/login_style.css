@@ -1,0 +1,27 @@
+@import url(./component.css);
+
+/* Start login */
+
+form input {
+  display: block;
+}
+
+.rgstr {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  #login{
+    height: 100vh;
+    background-image: url(../image/landing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .login-cont{
+    position: absolute;
+    left: 15%;
+  }
+
+}
+/* End login */

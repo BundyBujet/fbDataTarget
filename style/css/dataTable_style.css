@@ -1,0 +1,42 @@
+@import url("./component.css");
+
+.tbl-cont {
+  width: 300px;
+  height: 400px;
+  overflow: scroll;
+
+  margin: 25px auto 40px;
+}
+table {
+  border-spacing: 0px;
+}
+table .black {
+  background-color: var(--black);
+  color: var(--off_white);
+}
+table .dark {
+  background-color: var(--off_blue);
+  color: var(--off_white);
+}
+table .white {
+  background-color: var(--blue);
+  color: var(--off_white);
+}
+table thead td,
+table tbody td {
+  padding: 10px;
+  height: 36px;
+  min-width: 185px !important;
+}
+.btn {
+  margin: 25px auto 95px;
+}
+@media (min-width: 768px) {
+  .tbl-cont {
+    /* width: calc(100vw - 60px); */
+    width: 750px;
+    height: 400px;
+    overflow: scroll;
+    margin: 95px auto 40px;
+  }
+}
